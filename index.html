@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css" />
+    
+
+  </head>
+  <body>
+    <div class="hole">
+    <center>
+      <h1>
+        <p style="color: red;"><strong>
+          TIC TAC TOE</strong>
+        </p>
+      </h1>
+    </center>
+   <center> <b><p style="color:lawngreen;">
+      <h3><strong>Player 1 Name :</strong></h3>
+      <input type="text" id="p1" placeholder="Enter Player's name" name="p1" />
+      <br />
+      <br /><b><h3><strong>
+      Player 2 Name :</strong></h3></b>
+      <input type="text" id="p2" placeholder="Enter Player's name" name="p2" />
+      <script src="index.js"></script>
+
+      <br />
+      <br />
+      </center>
+
+      <center>
+        <button id="game-start" onclick="startGame()" value="Start Game"  style="height:50px; width:100px"><strong>Start Game</strong></button>
+        
+      </center>
+    </p>
+    <center>
+    <div id="game-container" class="hide class1 class2">
+      <div id="turn"></div>
+      <div class="row">
+        <div id="00" class="cell" onclick="handleClick(this)"></div>
+        <div id="01" class="cell" onclick="handleClick(this)"></div>
+        <div id="02" class="cell" onclick="handleClick(this)"></div>
+      </div>
+      <div class="row">
+        <div id="10" class="cell" onclick="handleClick(this)"></div>
+        <div id="11" class="cell" onclick="handleClick(this)"></div>
+        <div id="12" class="cell" onclick="handleClick(this)"></div>
+      </div>
+      <div class="row">
+        <div id="20" class="cell" onclick="handleClick(this)"></div>
+        <div id="21" class="cell" onclick="handleClick(this)"></div>
+        <div id="22" class="cell" onclick="handleClick(this)"></div>
+      </div>
+    </center>
+    </div>
+  </body>
+</html>
